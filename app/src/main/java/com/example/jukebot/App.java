@@ -3,10 +3,18 @@
  */
 package com.example.jukebot;
 
+import java.io.File;
+
 public class App
 {
     public static void main(String[] args)
     {
-        System.out.println("Hello World!!!");
+        File path = new File(args[0]);
+        
+        Jukebot jukebot = Jukebot.getInstance();
+
+        jukebot.load(path);
+        jukebot.play();
+        
     }
 }

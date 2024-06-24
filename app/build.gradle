@@ -10,12 +10,17 @@ plugins {
     id 'application'
 }
 
-repositories {
+repositories 
+{
     // Use Maven Central for resolving dependencies.
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
-dependencies {
+dependencies 
+{
+    implementation 'com.github.francitoshi:nut-base:v0.0.14'
+
     // Use JUnit Jupiter for testing.
     testImplementation libs.junit.jupiter
 
