@@ -1,0 +1,2 @@
+# jukebot
+a commandline jukebox
